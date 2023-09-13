@@ -1,0 +1,160 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"fileTypes": [
+		"non"
+	],
+	"name": "Nonogram NON",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#constant.numeric"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"begin": "\\b(catalogue|title|by|copyright)\\b",
+					"beginCaptures": {
+						"0": {
+							"name": "keyword.header.string.quoted.double.begin.text.non"
+						}
+					},
+					"end": "(?=\\r|\\n|\\r\\n)",
+					"endCaptures": {
+						"0": {
+							"name": "keyword.header.string.quoted.double.end.text.non"
+						}
+					},
+					"name": "entity.header.string.quoted.double.text.non",
+					"patterns": [
+						{
+							"include": "#string.quoted.double"
+						}
+					]
+				},
+				{
+					"begin": "\\b(height|width)\\b",
+					"beginCaptures": {
+						"0": {
+							"name": "keyword.header.number.begin.text.non"
+						}
+					},
+					"end": "(?=\\r|\\n|\\r\\n)",
+					"endCaptures": {
+						"0": {
+							"name": "keyword.header.number.end.text.non"
+						}
+					},
+					"name": "entity.header.number.text.non",
+					"patterns": [
+						{
+							"include": "#constant.numeric"
+						}
+					]
+				},
+				{
+					"begin": "\\b(license)\\b",
+					"beginCaptures": {
+						"0": {
+							"name": "keyword.header.string.unquoted.begin.text.non"
+						}
+					},
+					"end": "(?=\\r|\\n|\\r\\n)",
+					"endCaptures": {
+						"0": {
+							"name": "keyword.header.string.unquoted.end.text.non"
+						}
+					},
+					"name": "entity.header.string.unquoted.text.non",
+					"patterns": [
+						{
+							"include": "#string.unquoted"
+						}
+					]
+				},
+				{
+					"begin": "\\b(rows|columns)\\b",
+					"beginCaptures": {
+						"0": {
+							"name": "keyword.line.begin.text.non"
+						}
+					},
+					"end": "(?=\\r|\\n|\\r\\n)",
+					"endCaptures": {
+						"0": {
+							"name": "keyword.line.end.text.non"
+						}
+					},
+					"name": "entity.line.text.non"
+				},
+				{
+					"begin": "\\b(goal)\\b",
+					"beginCaptures": {
+						"0": {
+							"name": "keyword.goal.begin.text.non"
+						}
+					},
+					"end": "(?=\\r|\\n|\\r\\n|$)",
+					"endCaptures": {
+						"0": {
+							"name": "keyword.goal.end.text.non"
+						}
+					},
+					"name": "entity.goal.text.non",
+					"patterns": [
+						{
+							"include": "#constant.character.escape"
+						}
+					]
+				}
+			]
+		},
+		"constant.character.escape": {
+			"patterns": [
+				{
+					"match": "1",
+					"name": "constant.character.escape.text.non"
+				}
+			]
+		},
+		"constant.numeric": {
+			"patterns": [
+				{
+					"match": "\\b[0-9]+\\b",
+					"name": "constant.numeric.text.non"
+				}
+			]
+		},
+		"string.unquoted": {
+			"patterns": [
+				{
+					"match": "\\b[^\r\n]+\\b",
+					"name": "string.unquoted.text.non"
+				}
+			]
+		},
+		"string.quoted.double": {
+			"patterns": [
+				{
+					"begin": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.text.non"
+						}
+					},
+					"end": "\"",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.text.non"
+						}
+					},
+					"name": "string.quoted.double.text.non"
+				}
+			]
+		}
+	},
+	"scopeName": "text.non"
+}

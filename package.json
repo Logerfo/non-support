@@ -1,0 +1,50 @@
+{
+    "name": "sln-support",
+    "displayName": "NON Support",
+    "description": "Nonogram NON file support for Visual Studio Code",
+    "version": "0.0.1",
+    "publisher": "logerfo",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "homepage": "https://github.com/Logerfo/non-support/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Logerfo/non-support.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Logerfo/non-support/issues",
+        "email": "bruno@logerfo.tk"
+    },
+    "author": {
+        "email": "bruno@logerfo.tk",
+        "name": "Bruno Logerfo",
+        "url": "https://github.com/Logerfo"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "non",
+        "nonogram",
+        "picross"
+    ],
+    "license": "Unlicense",
+    "galleryBanner": {
+        "color": "#181818",
+        "theme": "dark"
+    },
+    "contributes": {
+        "languages": [{
+            "id": "non",
+            "aliases": ["Nonogram NON", "non"],
+            "extensions": [".non"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "non",
+            "scopeName": "text.non",
+            "path": "./syntaxes/non.tmLanguage.json"
+        }]
+    }
+}
