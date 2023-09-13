@@ -1,7 +1,3 @@
-[![Version](https://vsmarketplacebadge.apphb.com/version-short/logerfo.non-support.svg)](https://marketplace.visualstudio.com/items?itemName=logerfo.non-support)
-[![Rating](https://vsmarketplacebadge.apphb.com/rating-short/logerfo.non-support.svg)](https://marketplace.visualstudio.com/items?itemName=logerfo.non-support)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/logerfo.non-support.svg)](https://marketplace.visualstudio.com/items?itemName=logerfo.non-support)
-
 # NON Support
 
 ## Contributing
