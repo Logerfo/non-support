@@ -28,7 +28,7 @@
 							"name": "keyword.header.string.end.text.non"
 						}
 					},
-					"name": "entity.header.string.text.non",
+					"name": "entity.name.section.string.text.non",
 					"patterns": [
 						{
 							"include": "#string.quoted.double"
@@ -51,7 +51,7 @@
 							"name": "keyword.header.number.end.text.non"
 						}
 					},
-					"name": "entity.header.number.text.non",
+					"name": "entity.name.section.number.text.non",
 					"patterns": [
 						{
 							"include": "#constant.numeric"
@@ -71,7 +71,7 @@
 							"name": "keyword.line.end.text.non"
 						}
 					},
-					"name": "entity.line.text.non"
+					"name": "keyword.line.text.non"
 				},
 				{
 					"begin": "\\b(goal)\\b",
@@ -86,9 +86,10 @@
 							"name": "keyword.goal.end.text.non"
 						}
 					},
-					"name": "entity.goal.text.non",
+					"name": "constant.goal.text.non",
 					"patterns": [
 						{
+							"match": "\"([01]+)\"",
 							"include": "#constant.character.escape"
 						}
 					]

@@ -7,6 +7,9 @@
     "engines": {
         "vscode": "^1.33.0"
     },
+    "scripts": {
+        "test": "npx vscode-tmgrammar-test -c -g syntaxes/non.tmLanguage.json \"tests/**/*.non\""
+    },
     "homepage": "https://github.com/Logerfo/non-support/blob/master/README.md",
     "repository": {
         "type": "git",
@@ -35,16 +38,28 @@
         "theme": "dark"
     },
     "contributes": {
-        "languages": [{
-            "id": "non",
-            "aliases": ["Nonogram NON", "non"],
-            "extensions": [".non"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "non",
-            "scopeName": "text.non",
-            "path": "./syntaxes/non.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "non",
+                "aliases": [
+                    "Nonogram NON",
+                    "non"
+                ],
+                "extensions": [
+                    ".non"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "non",
+                "scopeName": "text.non",
+                "path": "./syntaxes/non.tmLanguage.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "vscode-tmgrammar-test": "^0.1.2"
     }
 }

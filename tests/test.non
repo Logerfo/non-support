@@ -1,0 +1,171 @@
+# SYNTAX TEST "text.non"
+
+catalogue "unit test 1"
+# <- keyword.header.string.begin.text.non
+#         ^ punctuation.definition.string.begin.text.non
+#         ^^^^^^^^^^^^^ string.quoted.double.text.non
+#                     ^ punctuation.definition.string.end.text.non
+# <----------------------- entity.name.section.string.text.non
+title "Random 123"
+# <- keyword.header.string.begin.text.non
+#     ^ punctuation.definition.string.begin.text.non
+#     ^^^^^^^^^^^^ string.quoted.double.text.non
+#                ^ punctuation.definition.string.end.text.non
+# <------------------ entity.name.section.string.text.non
+by "Bruno Logerfo"
+# <- keyword.header.string.begin.text.non
+#  ^ punctuation.definition.string.begin.text.non
+#  ^^^^^^^^^^^^^^^ string.quoted.double.text.non
+#                ^ punctuation.definition.string.end.text.non
+# <------------------ entity.name.section.string.text.non
+copyright "© 2023 Bruno Logerfo"
+# <- keyword.header.string.begin.text.non
+#         ^ punctuation.definition.string.begin.text.non
+#         ^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double.text.non
+#                              ^ punctuation.definition.string.end.text.non
+# <-------------------------------- entity.name.section.string.text.non
+license UNLICENSE
+# <- keyword.header.string.begin.text.non
+#       ^^^^^^^^^^ string.unquoted.text.non
+# <----------------- entity.name.section.string.text.non
+height 20
+# <- keyword.header.number.begin.text.non
+#      ^^ constant.numeric.text.non
+# <--------- entity.name.section.number.text.non
+width 20
+# <- keyword.header.number.begin.text.non
+#     ^^ constant.numeric.text.non
+# <--------- entity.name.section.number.text.non
+
+rows
+# <- keyword.line.begin.text.non
+# <---- keyword.line.text.non
+1,1,1,1,3,3,1
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ ^ constant.numeric.text.non
+1,6,2
+# <- constant.numeric.text.non
+# ^ ^ constant.numeric.text.non
+3,4,2,2,2
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ constant.numeric.text.non
+3,5,5,3
+# <- constant.numeric.text.non
+# ^ ^ ^ constant.numeric.text.non
+2,1,3,1,3
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ constant.numeric.text.non
+1,1,2,1,1,8
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ constant.numeric.text.non
+4,4,2,4
+# <- constant.numeric.text.non
+# ^ ^ ^ constant.numeric.text.non
+5,1,1,1,3,3
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ constant.numeric.text.non
+2,1,7,1,2
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ constant.numeric.text.non
+3,4,2,1,3,1
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ constant.numeric.text.non
+1,1,2,1,2,2
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ constant.numeric.text.non
+1,5,2,6
+# <- constant.numeric.text.non
+# ^ ^ ^ constant.numeric.text.non
+1,1,2,1,3,1
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ constant.numeric.text.non
+1,3,1,4,2
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ constant.numeric.text.non
+2,2,1,1,1,1,3
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ ^ constant.numeric.text.non
+4,4,2,3
+# <- constant.numeric.text.non
+# ^ ^ ^ constant.numeric.text.non
+5,1,4,1,1
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ constant.numeric.text.non
+2,7,8
+# <- constant.numeric.text.non
+# ^ ^ constant.numeric.text.non
+1,1,1,2,1,3,2
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ ^ constant.numeric.text.non
+3,6,2,1
+# <- constant.numeric.text.non
+# ^ ^ ^ constant.numeric.text.non
+
+columns
+# <- keyword.line.begin.text.non
+# <---- keyword.line.text.non
+4,3,2,2
+# <- constant.numeric.text.non
+# ^ ^ ^ constant.numeric.text.non
+3,4,4,1
+# <- constant.numeric.text.non
+# ^ ^ ^ constant.numeric.text.non
+1,2,2,1,1,7
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ constant.numeric.text.non
+3,2,2
+# <- constant.numeric.text.non
+# ^ ^ constant.numeric.text.non
+1,2,6,6
+# <- constant.numeric.text.non
+# ^ ^ ^ constant.numeric.text.non
+2,1,1,1,1,2
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ constant.numeric.text.non
+1,2,2,2,2,1,1
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ ^ constant.numeric.text.non
+4,7,1,4
+# <- constant.numeric.text.non
+# ^ ^ ^ constant.numeric.text.non
+1,5,1,1,1,3
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ constant.numeric.text.non
+1,1,5,3,1,1
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ constant.numeric.text.non
+2,1,1,5,3,1
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ constant.numeric.text.non
+4,3,1,4,2
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ constant.numeric.text.non
+7,3,1,2
+# <- constant.numeric.text.non
+# ^ ^ ^ constant.numeric.text.non
+1,1,1,1,6
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ constant.numeric.text.non
+2,3,7,1,3
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ constant.numeric.text.non
+1,1,2,1,4,4
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ constant.numeric.text.non
+1,5,1,2,1
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ constant.numeric.text.non
+1,1,3,2,2,1,1
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ ^ ^ constant.numeric.text.non
+4,14
+# <- constant.numeric.text.non
+# ^^ constant.numeric.text.non
+1,4,1,3,2
+# <- constant.numeric.text.non
+# ^ ^ ^ ^ constant.numeric.text.non
+
+goal "0010101010111011101000000001011111100110111001111001100110111110111110111110111011001001110010111000100101101010111111110111101111011000111111111001010101110111110010111111101000111110111101101011101000001001011010110110001011111011001111111001001100100011101010111000010111100011011011010101010001110111100011110110011101111101001111010010011011111110111111111010100110010111001111100011111100110100"
+# <- keyword.goal.begin.text.non
+#       ^ ^ ^ ^ ^^^ ^^^ ^        ^ ^^^^^^  ^^ ^^^  ^^^^  ^^  ^^ ^^^^^ ^^^^^ ^^^^^ ^^^ ^^  ^  ^^^  ^ ^^^   ^  ^ ^^ ^ ^ ^^^^^^^^ ^^^^ ^^^^ ^^   ^^^^^^^^^  ^ ^ ^ ^^^ ^^^^^  ^ ^^^^^^^ ^   ^^^^^ ^^^^ ^  ^ ^^^ ^     ^  ^ ^^ ^ ^^ ^^   ^ ^^^^^ ^^  ^^^^^^^  ^  ^^  ^   ^^^ ^ ^ ^^^    ^ ^^^^   ^^ ^^ ^^ ^ ^ ^ ^   ^^^ ^^^^   ^^^^ ^   ^^^ ^^^^^ ^  ^^^  ^  ^  ^^ ^^^^^^^ ^^^^^^^^^ ^ ^  ^^  ^ ^^^  ^^^^^   ^^^^^^  ^^ ^ constant.character.escape.text.non
+# <----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- constant.goal.text.non
