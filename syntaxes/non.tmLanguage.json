@@ -16,22 +16,25 @@
 		"keywords": {
 			"patterns": [
 				{
-					"begin": "\\b(catalogue|title|by|copyright)\\b",
+					"begin": "\\b(catalogue|title|by|copyright|license)\\b",
 					"beginCaptures": {
 						"0": {
-							"name": "keyword.header.string.quoted.double.begin.text.non"
+							"name": "keyword.header.string.begin.text.non"
 						}
 					},
 					"end": "(?=\\r|\\n|\\r\\n)",
 					"endCaptures": {
 						"0": {
-							"name": "keyword.header.string.quoted.double.end.text.non"
+							"name": "keyword.header.string.end.text.non"
 						}
 					},
-					"name": "entity.header.string.quoted.double.text.non",
+					"name": "entity.header.string.text.non",
 					"patterns": [
 						{
 							"include": "#string.quoted.double"
+						},
+						{
+							"include": "#string.unquoted"
 						}
 					]
 				},
@@ -52,26 +55,6 @@
 					"patterns": [
 						{
 							"include": "#constant.numeric"
-						}
-					]
-				},
-				{
-					"begin": "\\b(license)\\b",
-					"beginCaptures": {
-						"0": {
-							"name": "keyword.header.string.unquoted.begin.text.non"
-						}
-					},
-					"end": "(?=\\r|\\n|\\r\\n)",
-					"endCaptures": {
-						"0": {
-							"name": "keyword.header.string.unquoted.end.text.non"
-						}
-					},
-					"name": "entity.header.string.unquoted.text.non",
-					"patterns": [
-						{
-							"include": "#string.unquoted"
 						}
 					]
 				},
@@ -131,7 +114,7 @@
 		"string.unquoted": {
 			"patterns": [
 				{
-					"match": "\\b[^\r\n]+\\b",
+					"match": "\\w+",
 					"name": "string.unquoted.text.non"
 				}
 			]
